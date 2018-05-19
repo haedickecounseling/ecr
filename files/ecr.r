@@ -1,6 +1,5 @@
 #!/usr/bin/R
-# ECR C&A PHP
-# raw data in ecr.xlsx
+# Analyze raw data (ecr.xlsx) from C&A ECR study
 
 # required packages
 # - readxl
@@ -19,10 +18,13 @@ raw_data <- read_excel("raw_data.xlsx", sheet="Raw Data")
 df <- as.matrix(as.data.frame(lapply(raw_data, as.numeric)))
 
 # output file
-sink("ecr_results.txt", split=TRUE, append=TRUE)
+sink("ecr_descriptive_statistics.txt", split=TRUE, append=FALSE)
 
 # descriptive statistics
 summary(raw_data)
+
+# output file
+sink("ecr_corr_sig.txt", split=TRUE, append=FALSE)
 
 # correlations (r) and significance (p)
 rcorr(df, type=c("pearson"))

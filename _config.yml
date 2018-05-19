@@ -3,9 +3,9 @@ markdown:         kramdown
 highlighter:      rouge
 
 # Setup
-title:            'Research: ECR'
+title:            'ECR'
 tagline:          ''
-description:      'A clinical study of psychiatric diagnosis and attachment style in children and adolescents.'
+description:      'A clinical study of psychiatric diagnosis and attachment style in chilren and adolescents using a modified version of the Experience in Close Relatoinships Assessment.'
 url:              https://fongandrew.github.io/hydeout
 baseurl:          # the optional subpath of your site, e.g. "/blog"
                   # NB: This applies to all pages in your Jekyll site.
